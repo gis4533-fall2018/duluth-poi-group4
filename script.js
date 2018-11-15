@@ -12,7 +12,7 @@
 // We pass the div with id "map" to the L.map function
 var map = L.map('map')
     // set initial map view to Boston with zoom level 13
-    .setView([46.7867, -92.10015], 11);
+    .setView([46.7367, -92.10015], 11);
 
 // load a tile layer
 // loading the base layer of map tiles using a URL template
