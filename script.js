@@ -55,13 +55,14 @@ airportsLayer.addTo(map);
 
 
     airportsLayer.bindPopup(function(layer){
-            var Address = layer.feature.properties.Address;
-            var Attraction = layer.feature.properties.Attraction;
+        var Address = layer.feature.properties.Address;
+        var Attraction = layer.feature.properties.Attraction;
+        var Description = layer.feature.properties.Description;
+        var Website = layer.feature.properties.Website;
 		    
             console.log(layer.feature.properties)
                         
-        var html = "<h4>Attraction: "+Attraction+"</h4>"+
-		    	"<table><tr><td>Address: </td><td>"+Address+"</td></tr></table>";
+        var html = "<table><tr><td>Name: </td><td>"+Attraction+"</td></tr>"+"<tr><td>Address: </td><td>"+Address+"</td></tr>"+"<tr><td>Description: </td><td>"+Description+"</td></tr>"+"<tr><td>Website: </td><td>"+Website+"</td></tr></table>";
 
 		    return html;
 		})
