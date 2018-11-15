@@ -53,6 +53,16 @@ var airportsLayer = omnivore.csv('Duluth.csv', null, customLayer);
 
 airportsLayer.addTo(map);
 
-map.eachLayer(function(layer){
-    layer.bindPopup('Hello');
-});
+
+    airportsLayer.bindPopup(function(layer){
+            var Address = layer.feature.properties.Address;
+            var Attraction = layer.feature.properties.Attraction;
+		    
+            console.log(layer.feature.properties)
+                        
+        var html = "<h4>Attraction: "+Attraction+"</h4>"+
+		    	"<table><tr><td>Address: </td><td>"+Address+"</td></tr></table>";
+
+		    return html;
+		})
+	  	.addTo(map);
