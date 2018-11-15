@@ -33,13 +33,13 @@ body {
     /* white text */
     color: white;
     /* green background */
-    background-color: green;
+    background-color: lightsalmon;
     /* some spacing */
     padding-left: 12px;
     /* my attempt at not overlapping the map*/
     overflow: hidden;
     /* different font */
-    font-family: Helvetica, sans-serif;
+    font-family: Bell MT, sans-serif;
 }
 /* header children styling */
 #header * {
@@ -53,5 +53,5 @@ body {
 }
 /* link or anchor tag(<a>) styling */
 a {
-    color: aqua;
+    color: white;
 }
