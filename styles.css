@@ -1,0 +1,57 @@
+/*
+    Full screen leaflet styling
+    ref: https://github.com/geografa/foss4g2014-workshops/blob/master/Leaflet-and-Mapbox-JavaScript-API-Fundamentals.md#adding-styles
+*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    width: 100%;
+}
+
+/*
+    Header styling
+    ref: http://jsfiddle.net/agorshkov23/5osbcpyc/
+*/
+#header {
+    /* positions at the top of the page */
+    top: 0;
+    /* make it full width */
+    width: 100%;
+    /* make it visible on top of the map */
+    z-index: 999999;
+    /* fixed position within <body> */
+    position: fixed;
+    /* note that the map is positioned this far from the top of the
+    page*/
+    height: 60px;
+    /* white text */
+    color: white;
+    /* green background */
+    background-color: green;
+    /* some spacing */
+    padding-left: 12px;
+    /* my attempt at not overlapping the map*/
+    overflow: hidden;
+    /* different font */
+    font-family: Helvetica, sans-serif;
+}
+/* header children styling */
+#header * {
+    /* put everything on the same line */
+    display: inline;
+    margin-right: 20px;
+}
+/* bring items to the right */
+.right {
+    float: right;
+}
+/* link or anchor tag(<a>) styling */
+a {
+    color: aqua;
+}

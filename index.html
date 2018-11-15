@@ -1,0 +1,46 @@
+<!--
+    This is lesson one of a three part series introducing web mapping using leaflet.
+    It is based on the tutorial from Maptime Boston (https://maptimeboston.github.io/leaflet-intro/)
+-->
+
+<!-- <HTML> The start of our html document; everything goes in here -->
+<html>
+<!-- <HEAD> the head is not displayed in the browser;
+    rather, it provides the metadata for the page (telling the browser how to render it-->
+
+<head>
+    <title>A Leaflet map!</title>
+
+    <!-- Linking to our external resources (ie. Leaflet in this case) -->
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Trying to add omnivore   -->
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
+
+    <!-- CSS Styling has been moved to styles.css -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- <BODY> The content that is rendered on the web page -->
+
+<body>
+
+    <!-- Possible solution for a header -->
+    <header id="header">
+        <h2>A Leaflet map!</h2>
+        <h3><a href="https://leafletjs.com" target="_blank">I built this with leaflet</a></h3>
+        <h5 class="right">GIS4533 | Fall 2018 | Kris Johnson</h5>
+    </header>
+
+    <!-- the container for our map -->
+    <div id="map"></div>
+
+    <!-- Javascript has been moved to script.js -->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
