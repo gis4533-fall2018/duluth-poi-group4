@@ -52,3 +52,7 @@ var customLayer = L.geoJson(null  ,{
 var airportsLayer = omnivore.csv('Duluth.csv', null, customLayer);
 
 airportsLayer.addTo(map);
+
+map.eachLayer(function(layer){
+    layer.bindPopup('Hello');
+});
