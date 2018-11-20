@@ -28,19 +28,13 @@ var map = L.map('map')
 
 // FIXME: Load CSV data into leaflet markers
 /*try to load csv*/
-<<<<<<< HEAD
-var OpenMapSurfer_Grayscale = L.tileLayer('https://korona.geog.uni-heidelberg.de/tiles/roadsg/x={x}&y={y}&z={z}', {
-	attribution: 'Imagery from <a href="http://giscience.uni-hd.de/">GIScience Research Group @ University of Heidelberg</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-})
-OpenMapSurfer_Grayscale.addTo(map);
-=======
 
 var Esri_WorldGrayCanvas = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
 	attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
 	maxZoom: 16,
     })
 .addTo(map);
->>>>>>> Reed
+
 
 
 // FIXME: Add styling to markers
